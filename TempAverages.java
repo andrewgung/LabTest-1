@@ -9,32 +9,29 @@ public class TempAverages
  {
    Scanner s = new Scanner(System.in);
 
-   double temp1, temp2, temp3, temp4, temp5, temp6, temp7;
-   double oddTempAverage, evenTempAverage;
+   float temp1, temp2, temp3, temp4, temp5, temp6, temp7;
+   float oddTempAverage, evenTempAverage;
    //input
    {
-     temp1 = s.nextDouble();
-     temp2 = s.nextDouble();
-     temp3 = s.nextDouble();
-     temp4 = s.nextDouble();
-     temp5 = s.nextDouble();
-     temp6 = s.nextDouble();
-     temp7 = s.nextDouble();
+     temp1 = s.nextFloat();
+     temp2 = s.nextFloat();
+     temp3 = s.nextFloat();
+     temp4 = s.nextFloat();
+     temp5 = s.nextFloat();
+     temp6 = s.nextFloat();
+     temp7 = s.nextFloat();
 
    s.nextLine();
  }
 
- //average for even
+ //even average
  {
    evenTempAverage = (float) (temp2 + temp4 + temp6)/3;
    System.out.println(evenTempAverage);
- }
 
- //average for odd
- {
+//odd average
    oddTempAverage = (float) (temp1 + temp3 + temp5 + temp7)/4;
-   System.out.println(oddTempAverage);
+   System.out.println(oddTempAverage);  }
 
-    }
-  }
+ }
 }
